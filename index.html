@@ -52,8 +52,12 @@
 		</section>
 	
 		<footer>
-			<p>&copy; 2024 Udara Lakshan</p>
+			<p id="copyright"></p>
 		</footer>
 	</main>
+	<script>
+		const date = new Date()
+		document.getElementById('copyright').textContent =`© ${date.getFullYear()} Udara Lakshan`
+	</script>
 </body>
 </html>
